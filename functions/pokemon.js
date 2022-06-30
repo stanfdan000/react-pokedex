@@ -19,7 +19,7 @@ exports.handler = async (event) => {
     const data = await response.json();
     const json = JSON.stringify(data);
     
-    console.log(json);
+   
  
 
     

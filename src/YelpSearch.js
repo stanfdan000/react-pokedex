@@ -25,7 +25,7 @@ export default function YelpSearch() {
   }
 
   return (
-    <div>
+    <div className='button'>
       <form onSubmit={handleSubmit}>
         <input onChange={e => setBusinessQuery(e.target.value)} />
         <button>search</button>

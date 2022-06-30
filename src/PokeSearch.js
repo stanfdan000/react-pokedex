@@ -27,7 +27,7 @@ export default function PokeSearch() {
   }
   
   return (
-    <div>
+    <div className='button'>
       <div className='pokemon-search'>
         <form onSubmit={handleSubmit}>
           <input onChange={e => setPokemonQuery(e.target.value)} />
