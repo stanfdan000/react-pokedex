@@ -6,7 +6,7 @@ import YelpList from './YelpList';
 
 export default function YelpSearch() {
   const [business, setBusiness] = useState([]);
-  const [businessQuery, setBusinessQuery] = useState('portland');
+  const [businessQuery, setBusinessQuery] = useState('Portland');
 
   useEffect(() => {
     fetchAndStoreBusiness();
@@ -15,6 +15,7 @@ export default function YelpSearch() {
 
   async function fetchAndStoreBusiness() {
     const data = await getYelp(businessQuery);
+    
     setBusiness(data.businesses);
   }
 
